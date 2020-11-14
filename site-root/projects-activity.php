@@ -37,20 +37,7 @@ if (!($responseData = Cache::fetch($cacheKey)) || !empty($_GET['refresh'])) {
             }
         }
 
-        if ($Project->ChatChannel) {
-            //if ($projectActivity['slackChannelId']) {
-            //if ($projectActivity['slackChannelId'] = Emergence\Slack\API::getChannelId($Project->ChatChannel)) {
-                //$channelHistoryResponse = Emergence\Slack\API::request('channels.history', [
-                //    'get' => [
-                //        'channel' => $projectActivity['slackChannelId'],
-                //        'oldest' => $oneMonthAgo
-                 //   ]
-                //]);
-                //$projectActivity['messagesCount'] = count($channelHistoryResponse['messages']);
-            //} else {
-            //    $projectActivity['errors'][] = "Slack channel $Project->ChatChannel does not exist";
-            //}
-        }
+
 
         $projectsActivity[] = $projectActivity;
     }
